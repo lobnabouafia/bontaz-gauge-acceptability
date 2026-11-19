@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this code or these data, please cite the paper."
+title: "From Ranking Quality to Gauge Acceptability: An AIAG Attribute Gauge Study of an Unsupervised Visual Inspection Model"
+authors:
+  - family-names: Bouafia
+    given-names: Lobna
+  - family-names: Achouri
+    given-names: Ali
+  - family-names: El Moubarki
+    given-names: Lassad
+license: MIT
