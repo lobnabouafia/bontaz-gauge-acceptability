@@ -1,0 +1,116 @@
+[1] BONTAZ scores already computed - loaded 788 rows from bontaz_round5.csv
+    reproduction (recipe): gauge false alarms 1/25, misses 2/25 (expected 1 and 2)
+    thresholds: recipe 8.6561 (mean score), standard 2.0330 (max score)
+
+  detector: recipe
+   held-out test AUROC 0.959 [0.933, 0.981] | alpha 16/214 [4.3%, 11.9%] | beta 2/105 [0.2%, 6.7%] | E 94%
+                 distance alone 0.972 | model - distance -0.013 [-0.027, -0.001]
+                 disc 1.0x: part 0.931 | background 0.958 | part - background -0.027 [-0.056, +0.003] | strongest patch on part: defective 23%, good 10%
+                 disc 1.5x: part 0.954 | background 0.956 | part - background -0.002 [-0.027, +0.020] | strongest patch on part: defective 31%, good 20%
+                 disc 2.0x: part 0.957 | background 0.953 | part - background +0.005 [-0.015, +0.025] | strongest patch on part: defective 50%, good 30%
+   gauge set     AUROC 0.981 [0.941, 1.000] | alpha 1/25 [0.1%, 20.4%] | beta 2/25 [1.0%, 26.0%] | E 94%
+                 distance alone 0.978 | model - distance +0.003 [-0.024, +0.037]
+                 disc 1.0x: part 1.000 | background 0.963 | part - background +0.037 [+0.002, +0.098] | strongest patch on part: defective 4%, good 0%
+                 disc 1.5x: part 1.000 | background 0.947 | part - background +0.053 [+0.006, +0.122] | strongest patch on part: defective 4%, good 0%
+                 disc 2.0x: part 0.995 | background 0.939 | part - background +0.056 [+0.008, +0.126] | strongest patch on part: defective 16%, good 8%
+   matched set   AUROC 0.270 [0.139, 0.421] | alpha 25/25 [86.3%, 100.0%] | beta 2/25 [1.0%, 26.0%] | E 46%
+                 distance alone 0.285 | model - distance -0.014 [-0.110, +0.078]
+                 disc 1.0x: part 0.690 | background 0.256 | part - background +0.434 [+0.270, +0.600] | strongest patch on part: defective 4%, good 4%
+                 disc 1.5x: part 0.482 | background 0.251 | part - background +0.230 [+0.102, +0.359] | strongest patch on part: defective 4%, good 8%
+                 disc 2.0x: part 0.354 | background 0.280 | part - background +0.074 [-0.035, +0.189] | strongest patch on part: defective 16%, good 8%
+   same decision on both photographs of a good part: 1/25; rejected on first-occasion photo 25/25
+   first occasion: drift +0.0081/part, class effect +0.0443 [+0.0164, +0.0745], order-adjusted AUROC 0.712 [0.574, 0.858] (drift refitted per replicate)
+
+  detector: standard
+   held-out test AUROC 0.943 [0.917, 0.965] | alpha 10/214 [2.3%, 8.4%] | beta 36/105 [25.3%, 44.2%] | E 86%
+                 distance alone 0.972 | model - distance -0.029 [-0.055, -0.006]
+                 disc 1.0x: part 0.974 | background 0.963 | part - background +0.011 [-0.013, +0.036] | strongest patch on part: defective 71%, good 45%
+                 disc 1.5x: part 0.979 | background 0.961 | part - background +0.018 [-0.001, +0.038] | strongest patch on part: defective 76%, good 53%
+                 disc 2.0x: part 0.979 | background 0.959 | part - background +0.021 [+0.005, +0.038] | strongest patch on part: defective 81%, good 59%
+   gauge set     AUROC 0.981 [0.938, 1.000] | alpha 0/25 [0.0%, 13.7%] | beta 12/25 [27.8%, 68.7%] | E 76%
+                 distance alone 0.958 | model - distance +0.022 [-0.040, +0.096]
+                 disc 1.0x: part 1.000 | background 0.986 | part - background +0.014 [+0.000, +0.046] | strongest patch on part: defective 48%, good 24%
+                 disc 1.5x: part 1.000 | background 0.984 | part - background +0.016 [+0.000, +0.050] | strongest patch on part: defective 60%, good 36%
+                 disc 2.0x: part 1.000 | background 0.981 | part - background +0.019 [+0.000, +0.058] | strongest patch on part: defective 64%, good 52%
+   matched set   AUROC 0.582 [0.424, 0.738] | alpha 11/25 [24.4%, 65.1%] | beta 12/25 [27.8%, 68.7%] | E 54%
+                 distance alone 0.309 | model - distance +0.274 [+0.085, +0.461]
+                 disc 1.0x: part 0.747 | background 0.235 | part - background +0.512 [+0.350, +0.678] | strongest patch on part: defective 48%, good 28%
+                 disc 1.5x: part 0.530 | background 0.237 | part - background +0.293 [+0.158, +0.432] | strongest patch on part: defective 60%, good 28%
+                 disc 2.0x: part 0.370 | background 0.266 | part - background +0.104 [-0.006, +0.216] | strongest patch on part: defective 64%, good 32%
+   same decision on both photographs of a good part: 14/25; rejected on first-occasion photo 11/25
+   first occasion: drift +0.0025/part, class effect +0.0786 [+0.0191, +0.1410], order-adjusted AUROC 0.698 [0.522, 0.856] (drift refitted per replicate)
+  metal_nut seed 150360 recipe   clean      0.00: AUROC 0.889 | distance 0.791 | model-distance +0.098 [+0.029, +0.174] ok   | object 0.855 bg 0.859 | object-bg -0.004 [-0.103, +0.084] FLAG
+  metal_nut seed 150360 recipe   brightness 1.15: AUROC 0.908 | distance 0.803 | model-distance +0.105 [+0.034, +0.189] ok   | object 0.875 bg 0.899 | object-bg -0.024 [-0.113, +0.051] FLAG
+  metal_nut seed 150360 recipe   brightness 1.30: AUROC 0.954 | distance 0.942 | model-distance +0.012 [-0.022, +0.052] FLAG | object 0.902 bg 0.985 | object-bg -0.083 [-0.156, -0.021] FLAG
+  metal_nut seed 150360 recipe   gradient   0.30: AUROC 0.930 | distance 0.868 | model-distance +0.062 [+0.010, +0.127] ok   | object 0.878 bg 0.960 | object-bg -0.083 [-0.165, -0.015] FLAG
+  metal_nut seed 150360 recipe   gradient   0.60: AUROC 0.967 | distance 0.956 | model-distance +0.011 [-0.012, +0.040] FLAG | object 0.911 bg 1.000 | object-bg -0.089 [-0.164, -0.032] FLAG
+  metal_nut seed 150360 recipe   zoom       1.05: AUROC 0.969 | distance 0.955 | model-distance +0.014 [-0.009, +0.045] FLAG | object 0.922 bg 0.995 | object-bg -0.073 [-0.140, -0.022] FLAG
+  metal_nut seed 150360 recipe   zoom       1.10: AUROC 0.993 | distance 1.000 | model-distance -0.007 [-0.025, +0.000] FLAG | object 0.945 bg 1.000 | object-bg -0.055 [-0.120, -0.013] FLAG
+  metal_nut seed 150360 recipe   blur       1.00: AUROC 0.929 | distance 0.965 | model-distance -0.036 [-0.075, -0.004] FLAG | object 0.902 bg 0.930 | object-bg -0.028 [-0.100, +0.042] FLAG
+  metal_nut seed 150360 recipe   blur       2.00: AUROC 0.996 | distance 1.000 | model-distance -0.004 [-0.016, +0.000] FLAG | object 0.987 bg 1.000 | object-bg -0.013 [-0.041, +0.000] FLAG
+  metal_nut seed 150360 standard clean      0.00: AUROC 0.999 | distance 0.798 | model-distance +0.201 [+0.118, +0.290] ok   | object 0.862 bg 0.840 | object-bg +0.022 [-0.087, +0.131] FLAG
+  screw     seed 150360 recipe   clean      0.00: AUROC 0.804 | distance 0.753 | model-distance +0.051 [-0.042, +0.148] FLAG | object 0.904 bg 0.670 | object-bg +0.235 [+0.145, +0.330] ok
+  screw     seed 150360 recipe   brightness 1.15: AUROC 0.991 | distance 1.000 | model-distance -0.009 [-0.021, -0.001] FLAG | object 0.938 bg 0.978 | object-bg -0.040 [-0.089, +0.006] FLAG
+  screw     seed 150360 recipe   brightness 1.30: AUROC 1.000 | distance 1.000 | model-distance +0.000 [-0.000, +0.000] FLAG | object 0.985 bg 1.000 | object-bg -0.015 [-0.031, -0.004] FLAG
+  screw     seed 150360 recipe   gradient   0.30: AUROC 1.000 | distance 1.000 | model-distance +0.000 [-0.000, +0.000] FLAG | object 0.947 bg 1.000 | object-bg -0.053 [-0.093, -0.022] FLAG
+  screw     seed 150360 recipe   gradient   0.60: AUROC 1.000 | distance 1.000 | model-distance +0.000 [-0.000, +0.000] FLAG | object 0.994 bg 1.000 | object-bg -0.006 [-0.014, -0.001] FLAG
+  screw     seed 150360 recipe   zoom       1.05: AUROC 0.879 | distance 0.821 | model-distance +0.058 [-0.018, +0.145] FLAG | object 0.952 bg 0.749 | object-bg +0.203 [+0.119, +0.289] ok
+  screw     seed 150360 recipe   zoom       1.10: AUROC 0.967 | distance 0.947 | model-distance +0.020 [-0.015, +0.059] FLAG | object 0.987 bg 0.877 | object-bg +0.110 [+0.053, +0.182] ok
+  screw     seed 150360 recipe   blur       1.00: AUROC 0.860 | distance 0.865 | model-distance -0.005 [-0.080, +0.068] FLAG | object 0.919 bg 0.751 | object-bg +0.168 [+0.075, +0.256] ok
+  screw     seed 150360 recipe   blur       2.00: AUROC 0.999 | distance 1.000 | model-distance -0.001 [-0.002, +0.000] FLAG | object 0.998 bg 0.982 | object-bg +0.016 [-0.002, +0.043] FLAG
+  screw     seed 150360 standard clean      0.00: AUROC 0.974 | distance 0.617 | model-distance +0.357 [+0.245, +0.472] ok   | object 0.939 bg 0.500 | object-bg +0.439 [+0.335, +0.539] ok
+  metal_nut seed      1 recipe   clean      0.00: AUROC 0.897 | distance 0.832 | model-distance +0.065 [+0.008, +0.133] ok   | object 0.864 bg 0.861 | object-bg +0.003 [-0.100, +0.098] FLAG
+  metal_nut seed      1 recipe   brightness 1.15: AUROC 0.920 | distance 0.844 | model-distance +0.076 [+0.015, +0.142] ok   | object 0.883 bg 0.890 | object-bg -0.007 [-0.102, +0.086] FLAG
+  metal_nut seed      1 recipe   brightness 1.30: AUROC 0.959 | distance 0.960 | model-distance -0.001 [-0.026, +0.027] FLAG | object 0.912 bg 0.985 | object-bg -0.074 [-0.148, -0.015] FLAG
+  metal_nut seed      1 recipe   gradient   0.30: AUROC 0.938 | distance 0.898 | model-distance +0.040 [-0.005, +0.091] FLAG | object 0.885 bg 0.959 | object-bg -0.074 [-0.157, -0.004] FLAG
+  metal_nut seed      1 recipe   gradient   0.60: AUROC 0.974 | distance 0.969 | model-distance +0.005 [-0.006, +0.020] FLAG | object 0.920 bg 1.000 | object-bg -0.080 [-0.153, -0.028] FLAG
+  metal_nut seed      1 recipe   zoom       1.05: AUROC 0.975 | distance 0.964 | model-distance +0.011 [-0.008, +0.033] FLAG | object 0.927 bg 0.998 | object-bg -0.070 [-0.138, -0.018] FLAG
+  metal_nut seed      1 recipe   zoom       1.10: AUROC 0.994 | distance 1.000 | model-distance -0.006 [-0.021, +0.000] FLAG | object 0.953 bg 1.000 | object-bg -0.047 [-0.104, -0.009] FLAG
+  metal_nut seed      1 recipe   blur       1.00: AUROC 0.936 | distance 0.973 | model-distance -0.037 [-0.075, -0.006] FLAG | object 0.903 bg 0.933 | object-bg -0.030 [-0.113, +0.045] FLAG
+  metal_nut seed      1 recipe   blur       2.00: AUROC 0.998 | distance 1.000 | model-distance -0.002 [-0.009, +0.000] FLAG | object 0.987 bg 1.000 | object-bg -0.013 [-0.045, +0.000] FLAG
+  screw     seed      1 recipe   clean      0.00: AUROC 0.787 | distance 0.686 | model-distance +0.101 [+0.001, +0.203] ok   | object 0.902 bg 0.634 | object-bg +0.267 [+0.176, +0.364] ok
+  screw     seed      1 recipe   brightness 1.15: AUROC 0.990 | distance 0.998 | model-distance -0.009 [-0.021, -0.000] FLAG | object 0.937 bg 0.975 | object-bg -0.038 [-0.084, +0.005] FLAG
+  screw     seed      1 recipe   brightness 1.30: AUROC 1.000 | distance 1.000 | model-distance +0.000 [-0.000, +0.000] FLAG | object 0.988 bg 1.000 | object-bg -0.012 [-0.028, -0.002] FLAG
+  screw     seed      1 recipe   gradient   0.30: AUROC 1.000 | distance 1.000 | model-distance +0.000 [-0.000, +0.000] FLAG | object 0.948 bg 1.000 | object-bg -0.052 [-0.088, -0.024] FLAG
+  screw     seed      1 recipe   gradient   0.60: AUROC 1.000 | distance 1.000 | model-distance +0.000 [-0.000, +0.000] FLAG | object 0.997 bg 1.000 | object-bg -0.003 [-0.009, +0.000] FLAG
+  screw     seed      1 recipe   zoom       1.05: AUROC 0.864 | distance 0.748 | model-distance +0.116 [+0.026, +0.204] ok   | object 0.952 bg 0.716 | object-bg +0.236 [+0.151, +0.330] ok
+  screw     seed      1 recipe   zoom       1.10: AUROC 0.961 | distance 0.893 | model-distance +0.068 [+0.006, +0.132] ok   | object 0.990 bg 0.852 | object-bg +0.138 [+0.077, +0.204] ok
+  screw     seed      1 recipe   blur       1.00: AUROC 0.847 | distance 0.810 | model-distance +0.037 [-0.047, +0.129] FLAG | object 0.917 bg 0.723 | object-bg +0.194 [+0.109, +0.287] ok
+  screw     seed      1 recipe   blur       2.00: AUROC 1.000 | distance 1.000 | model-distance -0.000 [-0.002, +0.000] FLAG | object 1.000 bg 0.982 | object-bg +0.018 [+0.002, +0.040] ok
+  metal_nut seed      2 recipe   clean      0.00: AUROC 0.896 | distance 0.804 | model-distance +0.092 [+0.029, +0.160] ok   | object 0.855 bg 0.859 | object-bg -0.004 [-0.109, +0.093] FLAG
+  metal_nut seed      2 recipe   brightness 1.15: AUROC 0.917 | distance 0.822 | model-distance +0.096 [+0.029, +0.171] ok   | object 0.880 bg 0.895 | object-bg -0.015 [-0.102, +0.068] FLAG
+  metal_nut seed      2 recipe   brightness 1.30: AUROC 0.961 | distance 0.949 | model-distance +0.012 [-0.015, +0.046] FLAG | object 0.910 bg 0.989 | object-bg -0.079 [-0.156, -0.018] FLAG
+  metal_nut seed      2 recipe   gradient   0.30: AUROC 0.941 | distance 0.883 | model-distance +0.059 [+0.011, +0.114] ok   | object 0.885 bg 0.976 | object-bg -0.091 [-0.179, -0.022] FLAG
+  metal_nut seed      2 recipe   gradient   0.60: AUROC 0.972 | distance 0.963 | model-distance +0.008 [-0.006, +0.026] FLAG | object 0.915 bg 1.000 | object-bg -0.084 [-0.155, -0.029] FLAG
+  metal_nut seed      2 recipe   zoom       1.05: AUROC 0.972 | distance 0.961 | model-distance +0.011 [-0.006, +0.033] FLAG | object 0.926 bg 0.997 | object-bg -0.071 [-0.148, -0.019] FLAG
+  metal_nut seed      2 recipe   zoom       1.10: AUROC 0.994 | distance 1.000 | model-distance -0.006 [-0.022, +0.000] FLAG | object 0.949 bg 1.000 | object-bg -0.051 [-0.114, -0.011] FLAG
+  metal_nut seed      2 recipe   blur       1.00: AUROC 0.933 | distance 0.969 | model-distance -0.036 [-0.071, -0.007] FLAG | object 0.904 bg 0.928 | object-bg -0.024 [-0.103, +0.053] FLAG
+  metal_nut seed      2 recipe   blur       2.00: AUROC 0.995 | distance 1.000 | model-distance -0.005 [-0.019, +0.000] FLAG | object 0.985 bg 1.000 | object-bg -0.015 [-0.050, +0.000] FLAG
+  screw     seed      2 recipe   clean      0.00: AUROC 0.799 | distance 0.739 | model-distance +0.059 [-0.037, +0.156] FLAG | object 0.906 bg 0.652 | object-bg +0.254 [+0.160, +0.353] ok
+  screw     seed      2 recipe   brightness 1.15: AUROC 0.986 | distance 0.999 | model-distance -0.013 [-0.029, -0.001] FLAG | object 0.937 bg 0.974 | object-bg -0.037 [-0.087, +0.014] FLAG
+  screw     seed      2 recipe   brightness 1.30: AUROC 1.000 | distance 1.000 | model-distance +0.000 [-0.000, +0.000] FLAG | object 0.980 bg 1.000 | object-bg -0.020 [-0.042, -0.005] FLAG
+  screw     seed      2 recipe   gradient   0.30: AUROC 1.000 | distance 1.000 | model-distance +0.000 [-0.000, +0.000] FLAG | object 0.946 bg 1.000 | object-bg -0.054 [-0.095, -0.022] FLAG
+  screw     seed      2 recipe   gradient   0.60: AUROC 1.000 | distance 1.000 | model-distance +0.000 [-0.000, +0.000] FLAG | object 0.993 bg 1.000 | object-bg -0.007 [-0.017, -0.001] FLAG
+  screw     seed      2 recipe   zoom       1.05: AUROC 0.872 | distance 0.806 | model-distance +0.067 [-0.016, +0.160] FLAG | object 0.948 bg 0.737 | object-bg +0.211 [+0.130, +0.300] ok
+  screw     seed      2 recipe   zoom       1.10: AUROC 0.961 | distance 0.927 | model-distance +0.034 [-0.016, +0.088] FLAG | object 0.983 bg 0.874 | object-bg +0.109 [+0.052, +0.178] ok
+  screw     seed      2 recipe   blur       1.00: AUROC 0.850 | distance 0.850 | model-distance +0.000 [-0.086, +0.091] FLAG | object 0.914 bg 0.730 | object-bg +0.184 [+0.097, +0.274] ok
+  screw     seed      2 recipe   blur       2.00: AUROC 0.999 | distance 1.000 | model-distance -0.001 [-0.005, +0.000] FLAG | object 0.997 bg 0.979 | object-bg +0.018 [-0.003, +0.046] FLAG
+
+[4] summary (recipe): clean conditions flagged by D3 2/6, by D4 3/6
+    all shortcut conditions: n=48 | flagged by D3 41 | by D4 38 | by either 46
+    shortcuts that raised AUROC by >= 0.02: n=47 | flagged by D3 41 | by D4 37 | by either 45
+    by shortcut type (flag rate D3 / D4, mean AUROC gain):
+                       D3    D4  gain
+shortcut   strength                  
+blur       1.00      1.00  0.50  0.05
+           2.00      1.00  0.83  0.15
+brightness 1.15      0.50  1.00  0.11
+           1.30      1.00  1.00  0.13
+gradient   0.30      0.67  1.00  0.12
+           0.60      1.00  1.00  0.14
+zoom       1.05      0.83  0.50  0.08
+           1.10      0.83  0.50  0.13
+    standard PatchCore, clean public test: metal_nut AUROC 0.999, screw AUROC 0.974
+
+saved -> /content/drive/MyDrive/dataset_150360_final/round5
+Send report_round5.txt to Claude.
